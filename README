@@ -1,0 +1,30 @@
+Test for Endian-ness
+"endiantest"
+M. Yamanaka
+email: myamanaka@live.com
+website: csmyamanaka.com
+license: MIT (See included "LICENSE" file for details)
+
+Description:
+============
+Originally, this project was just a quick test used in another project (namely "File IO ++" or "fileiopp")
+because it was necessary for me to know how data is stored on my compiler because I was reading and writing byte data from files.
+Although it's a very small and simple test, I figured it could eventually become useful for other projects as well so I made it into its own repo.
+
+Installation:
+=============
+Just use make
+  
+  make
+
+Usage:
+======
+After it's been compiled, just run it:
+
+  ./EndianTest
+
+
+Uninstall:
+==========
+  
+  make clean
