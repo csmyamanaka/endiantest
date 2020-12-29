@@ -24,7 +24,6 @@ int main(){
   */
   int n = 65;
   
-  int* pn = &n;
   /*
     Having a char pointer point to the "first byte" of the integer could either mean
     that it's pointing to "00" or to "65".
@@ -46,8 +45,7 @@ int main(){
     char* | +0 | +1 | +2 | +3 |
 
   */
-  char* pcn = (char*)pn;
-  
+  char* pcn = (char*)&n;
 
   if(*pcn == '\0' && *(pcn + 3) == 'A') printf("big endian\n");
   else if(*pcn == 'A' && *(pcn + 3) == '\0') printf("little endian\n");
